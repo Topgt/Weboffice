@@ -92,6 +92,10 @@ function oprnHost(){
 	
 jQuery(document).ready(function () {
 	//eraseCookie(_ckName);
+	window.localStorage.setItem("key", "value");
+	var value = window.localStorage.getItem("key");
+	alert(value)
+	/*
 	var chk = readCookie(_ckName);
 	if(chk == null){
 		showHostInput();
@@ -102,6 +106,7 @@ jQuery(document).ready(function () {
 		
 		
 	}
+	*/
 /*		
 $('#myFrame').show();
 */	
