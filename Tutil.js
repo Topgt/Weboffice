@@ -2,6 +2,8 @@ var _ckName = 'ylM2Host';
 var _ckHost = '';
  // Cookies
         function createCookie(name, value, days) {
+			window.localStorage.setItem(name, value);
+			return ;
             if (days) {
                 var date = new Date();
                 date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -17,6 +19,8 @@ var _ckHost = '';
         }
 
         function readCookie(name) {
+			return window.localStorage.getItem(name);
+			
             var nameEQ = name + "=";
             var ca = document.cookie.split(';');
             for (var i = 0; i < ca.length; i++) {
@@ -92,11 +96,14 @@ function oprnHost(){
 	
 jQuery(document).ready(function () {
 	//eraseCookie(_ckName);
-	window.localStorage.setItem("key", "value");
+	/*
+	window.localStorage.setItem("key", "value1243");
 	var value = window.localStorage.getItem("key");
 	alert(value)
-	/*
+	*/
+
 	var chk = readCookie(_ckName);
+	//alert(chk );
 	if(chk == null){
 		showHostInput();
 	}else{
@@ -106,7 +113,7 @@ jQuery(document).ready(function () {
 		
 		
 	}
-	*/
+	
 /*		
 $('#myFrame').show();
 */	
