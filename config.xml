@@ -36,7 +36,7 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
-  <icon src="icon.png"/>
+  <plugin name="com.plugins.shortcut" spec="0.1.1" source="pgb" />
   <icon src="www/res/icon/android/72_72.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="www/res/icon/android/72_72.png" gap:platform="android" gap:qualifier="mdpi"/>
   <icon src="www/res/icon/android/72_72.png" gap:platform="android" gap:qualifier="hdpi"/>
@@ -45,6 +45,7 @@
   <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
   <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
   <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  <icon src="icon.png"/>  
   <access origin="*"/>
    <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://*/*"/>
